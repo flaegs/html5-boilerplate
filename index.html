@@ -21,7 +21,9 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet/less" type="text/css" href="css/reset.less">
+  <link rel="stylesheet/less" type="text/css" href="css/GGS.less">
+  <link rel="stylesheet/less" type="text/css" href="css/styles.less">
   
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -29,11 +31,13 @@
        Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
        for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/less-1.1.5.min.js"></script>
+  <script src="js/mylibs/GGS.js"></script>
 </head>
 
 <body>
   <header>
-
+	<h1>Test</h1>
   </header>
   <div role="main">
 
@@ -48,6 +52,9 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.0.min.js"><\/script>')</script>
+  
+  
+  
 
 
   <!-- scripts concatenated and minified via build script -->
@@ -55,15 +62,6 @@
   <script defer src="js/script.js"></script>
   <!-- end scripts -->
 
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
